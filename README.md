@@ -67,22 +67,22 @@ $ chmod ug=rwx,o=x file ==  chmod 771 file
   $ tar -zxvf FileName.tar.gz          #解壓縮
 
 #Linux檔案搜尋
-  #find [path] [option] [action] filename
+  $ find [path] [option] [action] filename
     #option
       *-size EX：找出大於500M的檔案 → -size +500M
       *-name EX：找出為照片的檔案 → -name "*.jpg"
       *-type EX：-type f → 一般檔案
                  -type d → 一般目錄
       *-user EX：同時找兩個擁有者的檔案 → -user user1 -o -user user2
-  #action -exec
-    #ls
-    #print
+    #action -exec
+      *ls
+      *print
     
-  #which filename
-    *-n<文件名长度>：指定文件名長度，指定的長度必須大於或等於所有文件中最長的文件名。
-    *-p<文件名長度>：與-n参數相同，但此處的<文件名長度>包括了文件的路徑。
-    *-w：指定輸出欄位的寬度。
-    *-V：顯示版本訊息。
+    #which filename
+      *-n<文件名长度>：指定文件名長度，指定的長度必須大於或等於所有文件中最長的文件名。
+      *-p<文件名長度>：與-n参數相同，但此處的<文件名長度>包括了文件的路徑。
+      *-w：指定輸出欄位的寬度。
+      *-V：顯示版本訊息。
   
 #Linux檔案內容查閱
   # cat：從第一行顯示檔案內容、形成新檔案
