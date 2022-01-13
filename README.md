@@ -137,9 +137,26 @@ $ chmod ug=rwx,o=x file ==  chmod 771 file
     * 查看端口是否被占用：netstat -a|grep 3306
     * 查看數據包統計信息：netstat -s
     * 查看路由信息：netstat -r
- 
+    
+##期末考筆記
 
+#awk語法
+$ awk '$2 + $3 >= 160 {print 0}' people.txt
+$ awk '($2 >6) && ($3 >= 150) {print 0}' people.txt
+$ awk 'BEGIN{a="b";print a,a++,a--,++a}' 
+$ awk '{if ($3 == 120)print 0}' people.txt
 
+#sed語法
+$sed -e 's/a/A/1' apple.txt
+$sed -e 's/a/A/g' apple.txt
+$sed -n 's/a/A/p' apple.txt
+$sed -f apple_command.txt apple.txt
+$sed '1a apple apple apple' apple.txt  #在第一行之後新增apple apple apple
+$sed '2,3c hahaha' apple.txt  #將2,3行替換成hahaha
+$sed 1,5d apple.txt  #將1,5行刪除
+$sed 's/.e/E/g' apple.txt
+$sed 's/pen/pencil/; s/have/had' apple.txt  #將pen替換成pencil；將have替換成had
 
-
-
+#git 語法
+$git config --global user.name "YungChieh"
+$git config --global user.email "07112039@scu.edu.tw"
