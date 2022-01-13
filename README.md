@@ -1,4 +1,4 @@
-# CS_NOTE
+## CS_NOTE
 $ cd D:/OneDrive/桌面    #將目錄變換至桌面
 $ pwd                    #顯示目前的目錄
 $ mkdir temp             #建立一個新目錄temp
@@ -141,27 +141,27 @@ $ chmod ug=rwx,o=x file ==  chmod 771 file
 ##期末考筆記
 
 #awk語法
-$ awk '$2 + $3 >= 160 {print 0}' people.txt
-$ awk '($2 >6) && ($3 >= 150) {print 0}' people.txt
+$ awk '$2 + $3 >= 160 {print 0}' people.txt  #在檔案中找尋第2,3欄相加大於160的列，並印出整列資訊
+$ awk '($2 >6) && ($3 >= 150) {print 0}' people.txt  #在檔案中找尋第2欄大於6和第3欄大於150的列，並印出整列資訊
 $ awk 'BEGIN{a="b";print a,a++,a--,++a}' 
-$ awk '{if ($3 == 120)print 0}' people.txt
+$ awk '{if ($3 == 120)print 0}' people.txt  #如果第3欄等於120，印出整列資訊
 
 #sed語法
-$sed -e 's/a/A/1' apple.txt
-$sed -e 's/a/A/g' apple.txt
+$sed -e 's/a/A/1' apple.txt  #將a替換成A
+$sed -e 's/a/A/g' apple.txt  
 $sed -n 's/a/A/p' apple.txt
 $sed -f apple_command.txt apple.txt
 $sed '1a apple apple apple' apple.txt  #在第一行之後新增apple apple apple
 $sed '2,3c hahaha' apple.txt  #將2,3行替換成hahaha
 $sed 1,5d apple.txt  #將1,5行刪除
-$sed 's/.e/E/g' apple.txt
+$sed 's/.e/E/g' apple.txt  #將e和前面的字元替換成E
 $sed 's/pen/pencil/; s/have/had' apple.txt  #將pen替換成pencil；將have替換成had
 
 #git 語法
 $git config --global user.name "YungChieh"
 $git config --global user.email "07112039@scu.edu.tw"
 $git init
-$git add .
-$git status
+$git add .  #新增檔案
+$git status  #查看檔案
 $git commit -m"修改紀錄"
-$git log
+$git log  #瀏覽檔案歷程
