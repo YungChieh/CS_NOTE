@@ -160,3 +160,8 @@ $sed 's/pen/pencil/; s/have/had' apple.txt  #將pen替換成pencil；將have替�
 #git 語法
 $git config --global user.name "YungChieh"
 $git config --global user.email "07112039@scu.edu.tw"
+$git init
+$git add .
+$git status
+$git commit -m"修改紀錄"
+$git log
